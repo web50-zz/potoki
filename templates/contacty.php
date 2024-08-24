@@ -24,7 +24,7 @@ get_header(); ?>
                     АО «ПОТОКИ» <br>
                     ИНН 7802938997
                 </div>
-                <a href="#">
+                <a href="/wp-content/uploads/2024/08/potoki_pasport_organizaczii_na_10_07_24_podpisan.pdf" targer="_blank">
                     Реквизиты <br>
                     организации
                 </a>

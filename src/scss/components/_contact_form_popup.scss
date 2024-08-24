@@ -151,6 +151,7 @@
                 font-weight: 300;
                 font-family: var(--main-font);
                 outline: none;
+                resize: none;
                 &:focus{
                     outline: none;
                 }
