@@ -1,0 +1,9 @@
+.header-big{
+    font-size: 76px;
+    line-height: 130px;
+    font-weight: 600;
+    text-transform: uppercase;
+    @media(max-width: 992px){
+        font-size: 48px;
+    }
+}

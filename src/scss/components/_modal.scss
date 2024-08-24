@@ -1,0 +1,64 @@
+.lk-modal__wrap{
+    height: 100%;
+    position: fixed;
+    background: rgba(0,0,0,0.5);
+    top: 0px;
+    left: 0px;
+    widtH: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+    &.visible{
+        display: flex;
+    }
+    @media(max-width:500px){
+        align-items: flex-start;
+    }
+    .lk-modal{
+        &__window{
+            position: relative;
+            max-width: 668px;
+            min-width: 668px;
+            background: #fff;
+            padding: 30px 50px;
+            box-sizing: border-box;
+            font-size: 20px;
+            font-weight: 300;
+            @media(max-width: 500px){
+                max-width: 500px;
+                min-width: 300px;
+                width: 100%;
+                margin: 10px;
+                padding: 20px;
+                overflow-y: scroll;
+                max-height: 98%;
+                height: 98%;
+            }
+            .centered{
+                justify-content: center;
+                display: flex;
+            }
+        }
+        &__close{
+            cursor: pointer;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            font-size: 20px;
+            font-weight: 800;
+        }
+        &__msg{
+            padding: 10px 5px;
+            text-align: center;
+        }
+        &__header{
+            font-size: 24px;
+            color: var(--color-four);
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 130%;
+        }
+        
+    }
+}

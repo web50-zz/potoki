@@ -1,0 +1,178 @@
+.main-nav{
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    widtH: 100%;
+    height: 100%;
+    background: var(--menu-background-color);
+    z-index: 991;
+    &__list{
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        padding-top: 180px;
+        position: relative;
+        @media(max-width:992px){
+            padding-top: 150px;
+            gap: 10px;
+        }
+        a{
+            font-size: 58px;
+            color: inherit;
+            text-transform: uppercase;
+            font-weight: 600;
+            line-height: 130%;
+            transition: all 0.5s;
+            text-decoration: none;
+            @media(max-width: 992px){
+                font-size: 28px;
+            }
+            &.active{
+                color: var(--menu-active-color);
+            }
+            &:hover{
+                color: var(--menu-active-color);
+            }
+        }
+        &:before{
+            position: absolute;
+            content: ' ';
+            width: 2px;
+            height: 100%;
+            top: 0px;
+            left: 3px;
+            background-color: #fff;
+            opacity: 0.2;
+        }
+    }
+    &__close{
+        color: white;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        top: 55px;
+        right: 90px;
+        position: absolute;
+        z-index: 99;
+        &:before{
+            content:'\2715';
+            width: 32px;
+            height: 32px;
+            font-size: 50px;
+            font-weight: bold;
+            @media(max-width:992px){
+                width: 28px;
+                height: 28px;
+                font-size: 40px;
+            }
+        }
+        @media(max-width:992px){
+            top: 30px;
+            right: 30px;
+        }
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: 100%;
+        @media(max-width: 992px){
+            display: grid;
+            grid-template-columns: 100px auto;
+        }
+    }
+    &__potoki1,&__potoki2{
+        position: relative;
+        &:before{
+            position: absolute;
+            content: ' ';
+            width: 2px;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            background-color: #fff;
+            opacity: 0.2;
+        }
+        img{
+            width: 86px;
+        }
+        svg{
+            width: 85px;
+            height: 874px;
+        }
+
+    }
+    &__potoki2{
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+        @media(max-width: 992px){
+            align-items: flex-start;
+            justify-content: center;
+            margin-top: -30px;
+            
+            &:before{
+                height: calc(100% + 30px);
+            }
+        }
+        img,svg{
+            width: 85px;
+            //height: 649px;
+            margin-bottom: -220px;
+            @media(max-width: 992px){
+                widtH: 36px;
+                height: 370px; 
+                margin-bottom: auto;
+            }
+        }
+    }
+    &__potoki1{
+        @media(max-width: 992px){
+            display: none;
+            img,svg{
+                widtH: 36px;
+                height: 370px;
+            }
+        }
+        img,svg{
+            margin-top: -220px;
+        }
+        
+    }
+}
+.buter{
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 9;
+    @media(max-width: 992px){
+        top: 25px;
+    }
+    .buter_btn{
+        cursor: pointer;
+        margin-right: 80px;
+        width: 44px;
+        height: 27px;
+
+        @media(max-width: 3840px){
+            width: 88px;
+            height: 54px;
+        }
+        @media(max-width: 2560px){
+            width: 44px;
+            height: 27px;
+        }
+        @media(max-width: 992px){
+            width: 45px;
+            height: 25px;
+            margin-right: 20px;
+        }
+        svg{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

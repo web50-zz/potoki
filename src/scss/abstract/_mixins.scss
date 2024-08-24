@@ -1,0 +1,20 @@
+@mixin vertical-line{
+    &:before{
+        position: absolute;
+        content: ' ';
+        width: 2px;
+        background-color: var(--line-color);
+        opacity: 0.2;
+    }
+}
+
+@mixin vertical-line-light{
+    &:before{
+        content: ' ';
+        width: 2px;
+        height: 998px;
+        position: absolute;
+        background: #FFF;
+        opacity: 0.3;
+    }
+}

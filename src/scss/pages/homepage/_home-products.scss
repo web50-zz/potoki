@@ -1,0 +1,170 @@
+.home-products{
+    padding-top: 120px;
+    @media(max-width: 992px){
+        padding-top: 60px;
+    }
+    h3{
+        font-size: 28px;
+        line-height: 110%;
+        text-transform: uppercase;
+        @media(max-width: 992px){
+            font-size: 24px;
+        }
+        svg{
+            width: 32px;
+            height: 31px;
+            display: inline;
+            @media(max-width: 992px){
+                width: 28px;
+                height: 28px;
+                margin-top: 10px;
+                display: block;
+            }
+        }
+        br{
+            @media(max-width: 992px){
+                display: none;
+            }
+        }
+    }
+    .container{
+        @media(max-width: 992px){
+            position: relative;
+            &:before{
+                position: absolute;
+                content: ' ';
+                width: 2px;
+                top: -120px;
+                left: 20px;
+                background-color: var(--line-color);
+                height: calc(100% + 120px + 60px + 60px);
+                opacity: 0.2;
+                z-index:2;
+            }
+        }
+    }
+    &__header{
+        font-size: 88px;
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 130%;
+        margin-bottom: 40px;
+        margin-left: -4px;
+        position: relative;
+        z-index: 2;
+        @media(max-width: 992px){
+            font-size: 48px;
+        }
+    }
+    &__img-wrapper{
+        width: 100%;
+        max-width: 356px;
+        img{
+            width: 100%;
+            display: block;
+        }
+    }
+    &__content{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 20px;
+        @media(max-width: 992px){
+            display: flex;
+            flex-direction: column;
+        }
+        &_2,&_4{
+            h3{
+                svg{
+                    padding-left: 20px;
+                    transform: rotate(90deg);
+                    @media(max-width: 992px){
+                        padding-left: 0px;
+                    }
+                }
+            }
+        }
+
+        &_1,&_2,&_3,&_4{
+            position: relative;
+            &:before{
+                position: absolute;
+                content: ' ';
+                width: 2px;
+                top: -300px;
+                left: 0px;
+                background-color: var(--line-color);
+                height: 1100px;
+                opacity: 0.2;
+                z-index:2;
+            }
+        }
+        &_1,&_2,&_4{
+            &:before{
+                @media(max-width: 992px){
+                    content: '';
+                    display: none;
+                }
+            }
+        }
+        &_1{
+            display: flex;
+            justify-content: center;
+            max-height: 780px;
+            @media(max-width: 992px){
+                display: none;
+            }
+            >div{
+                margin-top: 130px;
+            }
+        }
+        &_3{
+            display: flex;
+            flex-direction: column;
+            h3{
+                @media(max-width: 992px){
+                    order: 1;
+                    svg{
+                        transform: rotate(90deg);
+                    }
+                }
+            }
+            .home-products__img-wrapper{
+                @media(max-width: 992px){
+                    order: 2;
+                    min-height: 260px;
+                }
+            }
+            &:before{
+                @media(max-width: 992px){
+                    top: -20px;
+                    height: 140px;
+                }
+            }
+            @media(max-width: 992px){
+                margin-left: 100px;
+            }
+            img{
+                object-fit: cover;
+                height: 100%;
+                display: inline;
+            }
+        }
+
+        &_2{
+            img{
+                @media(max-width: 992px){
+                    min-height: 258px;
+                }
+            }
+        }
+        &_4{
+            @media(max-width:992px){
+                img{
+                    min-height: 258px;
+                }
+            }
+        }
+    }
+    
+   
+}

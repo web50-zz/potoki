@@ -1,0 +1,28 @@
+.breadcrumbs{
+    font-size: 40px;
+    line-height: 130%;
+    color: white;
+    position: absolute;
+    right: 80px;
+    top: 150px;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(-180deg);
+    @media(max-width:1336px){
+        font-size: 25px;
+        right: 85px;
+    }
+    @media(max-width:992px){
+        right: 30px;
+        top: 90px;
+        font-size: 20px;
+    }
+    a{
+        text-decoration: none;
+        font-weight: 300;
+        &.active{
+            font-weight: 600;
+        }
+    }
+}
