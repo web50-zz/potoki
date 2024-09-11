@@ -17,6 +17,8 @@ $(function() {
         }
         //$('.main-nav').fadeOut('fast');
     });
+    $('.contact-form-popup option:first').attr('disabled', 'disabled');
+    $('.contact-form-popup option:first').attr('value', '');
     /*
     $('.main-contact__content .select_widget').on('click',function(){
         let el = $(this).parent().find('select');

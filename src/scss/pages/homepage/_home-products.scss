@@ -86,17 +86,7 @@
 
         &_1,&_2,&_3,&_4{
             position: relative;
-            &:before{
-                position: absolute;
-                content: ' ';
-                width: 2px;
-                top: -300px;
-                left: 0px;
-                background-color: var(--line-color);
-                height: 1100px;
-                opacity: 0.2;
-                z-index:2;
-            }
+            
         }
         &_1,&_2,&_4{
             &:before{
@@ -110,6 +100,18 @@
             display: flex;
             justify-content: center;
             max-height: 780px;
+            margin-left: 3px;
+            &:before{
+                position: absolute;
+                content: ' ';
+                width: 2px;
+                top: -300px;
+                left: 0px;
+                background-color: var(--line-color);
+                height: 1100px;
+                opacity: 0.2;
+                z-index:2;
+            }
             @media(max-width: 992px){
                 display: none;
             }
@@ -129,6 +131,14 @@
                 }
             }
             .home-products__img-wrapper{
+                
+                    @include vertical-line;
+                    position: relative;
+                    &:before{
+                            top: 0px;
+                            left: 0px;
+                            height: 1000px;
+                    }
                 @media(max-width: 992px){
                     order: 2;
                     min-height: 260px;
@@ -156,11 +166,39 @@
                     min-height: 258px;
                 }
             }
+            .home-products__img-wrapper{
+                @include vertical-line;
+                position: relative;
+                &:before{
+                        top: -100px;
+                        left: 0px;
+                        height: 700px;
+                }
+            }
         }
         &_4{
             @media(max-width:992px){
                 img{
                     min-height: 258px;
+                }
+            }
+            .home-products__img-wrapper{
+                @include vertical-line-after;
+                position: relative;
+                &:after{
+                        top: -1500px;
+                        right: 0px;
+                        height: 1900px;
+                        @media(max-width: 992px){
+                            display: none;
+                        }
+                }
+                @include vertical-line;
+                position: relative;
+                &:before{
+                        top: -100px;
+                        left: 0px;
+                        height: 600px;
                 }
             }
         }

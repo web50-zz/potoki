@@ -1,0 +1,43 @@
+.faq{
+    @media(max-width: 992px){
+        padding-top: 70px;
+    }
+    &__header{
+        font-size: 88px;
+        line-height: 130%;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 60px;
+        position: relative;
+        z-index: 1;
+        @media(max-width: 992px){
+            font-size: 48px;
+        }
+    }
+    &-message{
+        font-size: 20px;
+        line-height: 120%;
+        background-color: rgba(81, 175, 210, 0.2);
+        width: max-content;
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        border-radius: 10px;
+        @media(max-width: 992px){
+            max-width: 70%;
+            font-size: 16px;
+        }
+        &.faq-to{
+            background-color: #E7EAEE;
+            align-self: flex-end;
+            margin-left: auto;
+        }
+    }
+    &-list{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin: 0px auto;
+        max-width: 1150px;
+    }    
+}

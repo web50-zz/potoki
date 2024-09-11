@@ -7,15 +7,12 @@
     .container{
         @media(max-width: 992px){
             position: relative;
+            @include vertical-line;
+            position: relative;
             &:before{
-                position: absolute;
-                content: ' ';
-                width: 2px;
-                top: -50px;
+                top: -150px;
                 left: 20px;
-                background-color: var(--line-color);
-                opacity: 0.2;
-                height: calc(100% + 50px + 200px);
+                height: calc(100% + 50px + 300px);
             }
         }
     }
@@ -87,7 +84,10 @@
     }
     &__content_1{
         grid-column: span 2;
-
+        margin-bottom: 100px;
+        @media(max-width: 992px){
+            margin-bottom: 50px;
+        }
         p{
             font-size: 28px;
             line-height: 130%;
@@ -95,6 +95,7 @@
             margin-bottom: 0px;
             @media(max-width: 992px){
                 font-size: 20px;
+                font-weight: 400;
             }
         }
         h3{
@@ -124,7 +125,7 @@
         p{
             font-size: 28px;
             font-weight: 300;
-            line-height: 130%;
+            line-height: 150%;
             margin-bottom: 0px;
             margin-top: 10px;
             @media(max-width: 992px){

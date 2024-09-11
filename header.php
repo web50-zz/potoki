@@ -15,6 +15,7 @@ $THEME_VERSION =  wp_get_theme()->get( 'Version' );
 	<meta name="format-detection" content="address=no" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><![endif]-->
+	<title><?php wp_title(); ?></title>
 <link rel="shortcut icon" href="/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -38,14 +39,14 @@ $THEME_VERSION =  wp_get_theme()->get( 'Version' );
 				<?}else if($pageID == '19' || $pageID == '26'){?>
 					<img class="top-screen__pic_1" alt="" width="auto" height="auto" src='<?=get_template_directory_uri()?>/assets/images/top_pic_4.webp?v=<?=$THEME_VERSION?>'/>
 				<?}else{?>
-					<img class="top-screen__pic_1" alt="" width="auto" height="auto" src='<?=get_template_directory_uri()?>/assets/images/top_pic_3_v3.webp?v=<?=$THEME_VERSION?>'/>
+					<img class="top-screen__pic_1" alt="" width="auto" height="auto" src='<?=get_template_directory_uri()?>/assets/images/top_pic_3.webp?v=<?=$THEME_VERSION?>'/>
 				<?}?>
 				<?if(is_front_page()){?>
 						<img class="top-screen__pic_2"  alt="" width="auto" height="auto" src='<?=get_template_directory_uri()?>/assets/images/top_pic_2_v2.webp?v=<?=$THEME_VERSION?>'/>
 					<?}else if($pageID == '19' || $pageID == '26'){?>
 					<img class="top-screen__pic_2" alt="" width="auto" height="auto" src='<?=get_template_directory_uri()?>/assets/images/products/top_pic_products_mobile.webp?v=<?=$THEME_VERSION?>'/>
 					<?}else{?>
-						<img class="top-screen__pic_2"  alt="" width="auto" height="auto" src='<?=get_template_directory_uri()?>/assets/images/top_pic_2_v2.webp?v=<?=$THEME_VERSION?>'/>
+						<img class="top-screen__pic_2"  alt="" width="auto" height="auto" src='<?=get_template_directory_uri()?>/assets/images/top_pic_5.webp?v=<?=$THEME_VERSION?>'/>
 				<?}?>
 			</div>
 			<div class="top-screen__content">
@@ -82,19 +83,25 @@ $THEME_VERSION =  wp_get_theme()->get( 'Version' );
 									<use href="#potoki"></use>
 								</svg>
 							</a>
+							<div class="top-screen__contacts-mobile">
+								<a href="tel:+78124002020">+7 (812) 400-20-20</a>
+								<a href="mailto:inbox@potoki.ru">inbox@potoki.ru</a>
+							</div>
 						</div>
 					</div>
 					<div class="top-screen__grid-second">
-					<?if(is_front_page()){?>
+					<?if(is_front_page()|| ($pageID == '19' || $pageID == '26')){?>
 						<div class="top-screen__contacts " data-aos="fade-left" data-aos-delay="2800">
-							<a href="tel:+7 812 400 20 20">+7 812 400 20 20</a>
+							<a href="tel:+78124002020">+7 (812) 400-20-20</a>
 							<a href="mailto:inbox@potoki.ru">inbox@potoki.ru</a>
 						</div>
+						<?if(is_front_page()){?>
 						<div class="top-screen__potoki-image-one" >
 							<svg>
 								<use href="#potoki_vertical_top_2"></use>
 							</svg>
 						</div>
+						<?}?>
 					<?}?>
 					</div>
 					<div class="top-screen__grid-third">
@@ -133,7 +140,7 @@ $THEME_VERSION =  wp_get_theme()->get( 'Version' );
 					<a href="#">качество</a>
 					<a href="#">карьера</a>
 					*/?>
-					<a href="/kontakty/">Контакты</a>
+					<a href="/contacts/">Контакты</a>
 					<?/*
 					<a href="#">поставщикам</a>
 					*/?>
