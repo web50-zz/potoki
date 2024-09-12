@@ -2,27 +2,27 @@
     padding: 70px 0px;
     z-index: -1;
     position: relative;
-    p{
-        font-size: 20px;
-        line-height: 140%;
-        font-weight: 300;
-        padding: 0px;
-        margin: 0px;
-        position: relative;
-        @media(max-width: 992px){
-            font-size: 16px;
+        p{
+            font-size: 20px;
+            line-height: 140%;
+            font-weight: 300;
+            padding: 0px;
+            margin: 0px;
+            position: relative;
+            @media(max-width: 992px){
+                font-size: 16px;
+            }
+            &:before{
+                content:' ';
+                height: 2px;
+                width: 15px;
+                background-color: var(--color-two);
+                position: absolute;
+                top: 15px;
+                left: -25px;
+            }
         }
-        &:before{
-            content:' ';
-            height: 2px;
-            width: 15px;
-            background-color: var(--color-two);
-            position: absolute;
-            top: 15px;
-            left: -25px;
-        }
-    }
-         &__pic{
+        &__pic{
             max-width: 612px;
             height: auto;
             @media(max-width: 1700px){
@@ -50,7 +50,7 @@
                     }
                 }
             }
-        }
+         }
 
         &__title{
             font-size: 76px;
@@ -131,7 +131,7 @@
             position: relative;
             @include vertical-line;
             &:before{
-                top: calc(0px - 105px);
+                top: calc(0px - 165px);
                 left: 3px;
                 height: calc(100% + 900px);
                 @media(max-width: 992px){
@@ -140,7 +140,12 @@
                 }
             }
             @media(max-width: 1700px){
-                grid-template-columns: 60% auto;
+                grid-template-columns: 50% auto;
+                gap: 30px;
+            }
+            @media(max-width: 1300px){
+                grid-template-columns: 50% auto;
+                gap: 30px;
             }
             @media(max-width: 992px){
                 display: flex;
