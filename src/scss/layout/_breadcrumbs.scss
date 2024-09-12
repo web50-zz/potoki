@@ -9,6 +9,7 @@
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: rotate(-180deg);
+    z-index: 2;
     @media(max-width:1336px){
         font-size: 25px;
         right: 85px;

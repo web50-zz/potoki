@@ -14,6 +14,7 @@
         @media(max-width: 992px){
             display: flex;
             flex-direction: column;
+            gap: 20px;
         }
     }
     &__title{
@@ -22,27 +23,51 @@
         text-transform: uppercase;
         position: relative;
         line-height: 120%;
+        margin-left: 3px;
         @include vertical-line-light;
         &:before{
             top: -200px;
             left: 0px;
-            height: 1500px;
+            height: 1800px;
+            @media(max-width: 992px){
+                display: none;
+            }
         }
         @media(max-width: 992px){
-            font-size: 48px;
+            font-size: 36px;
+            margin-left: 0px;
         }   
+    }
+    &__subtitle{
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 140%;
+        padding-top: 70px;
+        margin-right: -50px;
+        align-self: flex-start;
+        @media(max-width: 992px){
+            font-size: 16px;
+            max-width: 285px;
+            padding-top: 20px;
+        }
+        br{
+            @media(max-width: 992px){
+                display: none;
+            }   
+        }
     }
     &__one{
         display: flex;
         align-items: flex-end;
         gap: 80px;
-        padding-left: 160px;
+        padding-left: 60px;
         grid-column: span 2;
+        margin-top: 0px;
         @media(max-width: 992px){
-            order: 3;
             flex-direction: column;
             padding-left: 0px;
             align-items: flex-start;
+            gap: 40px;
         }
     }
     &__two{
@@ -95,21 +120,21 @@
             font-weight: 300;
             min-width: 549px;
             max-width: 549px;
+            padding-left: 4px;
             @media(max-width: 992px){
-                order: 1;
                 min-width: 100%;
             }
         }
         &-two{
-            max-width: 480px;
-            font-size: 15px;
+            max-width: 600px;
+            font-size: 20px;
             line-height: 140%;
             font-weight: 300;
             strong{
                 font-weight: 600;
             }
             @media(max-width: 992px){
-                order: 3;
+                
             }
         }
     }
@@ -127,21 +152,20 @@
     }
     &__pic1{
         @media(max-width: 992px){
-            order: 3;
+            max-width: 164px;
         }        
     }
     &__pic2{
-        margin-bottom: -45px;
         @media(max-width: 992px){
             margin-bottom: 0px;
-            order: 2;
+            max-width: 233px;
         }
     }
     &__pic3{
-        margin-top: -40px;
         @media(max-width: 992px){
             margin-top: 0px;
-            order: 1;
+            max-width: 327px;
+            width: 100%;
         }
     }
 }

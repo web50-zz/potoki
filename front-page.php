@@ -251,7 +251,7 @@ get_header(); ?>
             </div>
             <div class="home-products__content_3" data-aos="fade-down" data-aos-delay="300">
                 <div class="home-products__img-wrapper">
-                    <img src='<?=get_template_directory_uri()?>/assets/images/pic8_v2.webp?v=<?=$THEME_VERSION?>'  alt="" width="auto" height="auto"/>
+                    <img src='<?=get_template_directory_uri()?>/assets/images/pic8.webp?v=<?=$THEME_VERSION?>'  alt="" width="auto" height="auto"/>
                 </div>
                 <h3>
                     Упаковка
@@ -271,7 +271,7 @@ get_header(); ?>
                     </svg>
                 </h3>
                 <div class="home-products__img-wrapper">
-                    <img src='<?=get_template_directory_uri()?>/assets/images/pic9_v2.webp?v=<?=$THEME_VERSION?>'  alt="" width="auto" height="auto"/>
+                    <img src='<?=get_template_directory_uri()?>/assets/images/pic9.webp?v=<?=$THEME_VERSION?>'  alt="" width="auto" height="auto"/>
                 </div>
             </div>
         </div>

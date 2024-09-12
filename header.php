@@ -36,17 +36,14 @@ $THEME_VERSION =  wp_get_theme()->get( 'Version' );
 			<div class="top-screen__pic">
 				<?if(is_front_page()){?>
 					<img class="top-screen__pic_1" alt="" width="auto" height="auto" src='<?=get_template_directory_uri()?>/assets/images/top_pic_1_v4.webp?v=<?=$THEME_VERSION?>'/>
+					<img class="top-screen__pic_2"  alt="" width="auto" height="auto" src='<?=get_template_directory_uri()?>/assets/images/top_pic_2_v2.webp?v=<?=$THEME_VERSION?>'/>
 				<?}else if($pageID == '19' || $pageID == '26'){?>
 					<img class="top-screen__pic_1" alt="" width="auto" height="auto" src='<?=get_template_directory_uri()?>/assets/images/top_pic_4.webp?v=<?=$THEME_VERSION?>'/>
+					<img class="top-screen__pic_2" alt="" width="auto" height="auto" src='<?=get_template_directory_uri()?>/assets/images/products/top_pic_products_mobile.webp?v=<?=$THEME_VERSION?>'/>
+					<img class="top-screen__pic_3" alt="" width="auto" height="auto" src='<?=get_template_directory_uri()?>/assets/images/products/top_pic_products_mobile2.webp?v=<?=$THEME_VERSION?>'/>
 				<?}else{?>
 					<img class="top-screen__pic_1" alt="" width="auto" height="auto" src='<?=get_template_directory_uri()?>/assets/images/top_pic_3.webp?v=<?=$THEME_VERSION?>'/>
-				<?}?>
-				<?if(is_front_page()){?>
-						<img class="top-screen__pic_2"  alt="" width="auto" height="auto" src='<?=get_template_directory_uri()?>/assets/images/top_pic_2_v2.webp?v=<?=$THEME_VERSION?>'/>
-					<?}else if($pageID == '19' || $pageID == '26'){?>
-					<img class="top-screen__pic_2" alt="" width="auto" height="auto" src='<?=get_template_directory_uri()?>/assets/images/products/top_pic_products_mobile.webp?v=<?=$THEME_VERSION?>'/>
-					<?}else{?>
-						<img class="top-screen__pic_2"  alt="" width="auto" height="auto" src='<?=get_template_directory_uri()?>/assets/images/top_pic_5.webp?v=<?=$THEME_VERSION?>'/>
+					<img class="top-screen__pic_2"  alt="" width="auto" height="auto" src='<?=get_template_directory_uri()?>/assets/images/top_pic_5.webp?v=<?=$THEME_VERSION?>'/>
 				<?}?>
 			</div>
 			<div class="top-screen__content">
@@ -58,7 +55,7 @@ $THEME_VERSION =  wp_get_theme()->get( 'Version' );
 							в повседневности
 						<?}else if($pageID == '19' || $pageID == '26'){?>
 							Питьевая вода <br>
-							в мягкой упаковке
+							в твоём кармане
 						<?}else{?>
 							Мы открыты <br>
 							к сотрудничеству
@@ -73,9 +70,16 @@ $THEME_VERSION =  wp_get_theme()->get( 'Version' );
 							качество жизни людей 
 						</div>
 						<?}else if($pageID == '19' || $pageID == '26'){?>
-						<div class="top-screen__second dark"  data-aos="fade-left" data-aos-delay="2800">
-							Вода бренда Стилл это инновация, которая сделает рынок питьевой воды рациональнее. Вода в приятной на ощупь упаковке дойпак, которую удобно брать с собой
-						</div>
+							<?/*
+							<div class="top-screen__second dark"  data-aos="fade-left" data-aos-delay="2800">
+								Вода бренда Стилл это инновация, которая сделает рынок питьевой воды рациональнее. Вода в приятной на ощупь упаковке дойпак, которую удобно брать с собой
+							</div>
+							*/?>
+							<div class="top-screen__second dark"  data-aos="fade-left" data-aos-delay="2800">
+								<div class="top-screen__still_logo">
+										<img class="top-screen__still_logo_pic" alt="" width="324" height="144" src='<?=get_template_directory_uri()?>/assets/images/products/products_pic2.webp?v=<?=$THEME_VERSION?>'/>
+								</div>
+							</div>
 						<?}?>
 						<div class="top-screen__potoki">
 							<a href="/" title="На главную">

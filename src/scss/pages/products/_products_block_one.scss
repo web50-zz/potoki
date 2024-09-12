@@ -2,9 +2,9 @@
     font-size: 20px;
     line-height: 140%;
     font-weight: 300;
-    z-index: -1;
     @media(max-width: 992px){
         font-size: 16px;
+        padding-bottom: 30px;
     }
     h3{
         font-size: 40px;
@@ -37,7 +37,7 @@
             padding-left: 0px;
             display: flex;
             flex-direction: column;
-            gap: 40px;
+            gap: 0px;
         }
         @include vertical-line;
         &:before{
@@ -51,15 +51,53 @@
         }
         &-one,&-two,&-three,&-four,&-five{
             transition: all 0.2s;
-            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            svg{
+                opacity: 0;
+                transition: all 0.2s;
+                @media(max-width: 992px){
+                    display: none;
+                }
+            }
             &:hover{
                 color: var(--color-two);
-                svg{
-                    opacity: 1;
+                @media(min-width: 992px){
+                    svg{
+                        opacity: 1;
+                    }
+                }
+            }
+            p{
+                @media(max-width: 992px){
+                    font-size: 14px;
                 }
             }
         }
+        &-four,&-five{
+            padding-top: 100px;
+        }
         &-one{
+            transition: all 0.5s;
+            @media(max-width: 992px){
+                margin-left: 60px;
+                max-width: 280px;
+            }
+            @include vertical-line;
+            &:before{
+                    display: none;
+                    @media(max-width: 992px){
+                        top: -100px;
+                        left: 0;
+                        height: calc(100% + 51px);
+                        display: block;
+                        
+                    }
+            }
+            svg{
+                transform: rotate(90deg);
+                margin-left: 360px;
+            }
             h3{
                 @include vertical-line;
                 &:before{
@@ -71,6 +109,11 @@
                     }
                 }
             }
+            br{
+                @media(max-width: 450px){
+                    display: none;
+                }
+            }
         }
         &-two{
             grid-row: span 2;
@@ -78,12 +121,9 @@
 
         }
         &-three{
-            cursor: pointer;
             transition: all 0.5s;
             svg{
                 transform: rotate(180deg);
-                opacity: 0;
-                transition: all 0.2s;
             }
             h3{
                 @include vertical-line;
@@ -99,20 +139,31 @@
         }
         &-four{
             padding-left: 100px;
+            svg{
+                margin-left:270px;
+            }
             h3{
                 @include vertical-line;
                 &:before{
                     top: 10px;
                     left: 0px;
                     height: 800px;
+                    @media(max-width: 992px){
+                        height: 290px;
+                    }
                 }
+                
             }
             @media(max-width: 992px){
                 padding-left: 60px;
+                padding-top: 10px;
             }
         }
         &-five{
             padding-left: 100px;
+            svg{
+                transform: rotate(-90deg);
+            }
             h3{
                 @include vertical-line;
                 &:before{
@@ -126,13 +177,16 @@
             }
             @media(max-width: 992px){
                 padding-left: 60px;
+                padding-top: 10px;
             }
         }
     }
     &__pic-one{
         max-width: 334px;
+        margin-left: -50px;
+        margin-top: -20px;
         @media(max-width: 992px){
-            max-width: 200px;
+            max-width: 230px;
             margin: 0px auto;
         }
         img{

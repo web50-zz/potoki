@@ -2,7 +2,7 @@
     color: var(--top-screen-color);
     overflow: hidden;
     position: relative;
-    
+    z-index: 1;
     //clip-path: polygon(0 0, 100% 0, 100% 100%, 0 76%);
     @media(max-width: 992px){
         //clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
@@ -33,6 +33,9 @@
                 display: block;
             }
         }
+        &_3{
+            display:none; 
+         }
     }
     &.page{// на всех кроме парента заужаем ввидимость по вертикали картинки
         .top-screen__pic_2{
@@ -375,6 +378,18 @@
                 margin-bottom: -50px;
             }
     }
+    &__still_logo{
+        width: 324px;
+        @media(max-width: 992px){
+            width: 92px;
+        }
+        &_pic{
+            width: 100%;
+            height:auto;
+            display:block
+        }
+
+    }
 }
 .products-page{
     .top-screen__grid-second,.top-screen__grid-third{
@@ -384,6 +399,23 @@
             }
         }
     }
+    .top-screen__pic_2{
+        @media(max-width: 450px){
+            display: none;
+        }
+
+    }
+    .top-screen__pic_3{
+        @media(max-width: 450px){
+            display: block;
+        }
+    }
+    .top-screen__potoki{
+        @media(max-width: 450px){
+            bottom: 30px;
+        }
+    }
+
 }
 
 .contacts-page{

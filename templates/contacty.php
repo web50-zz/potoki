@@ -19,7 +19,7 @@ get_header(); ?>
                     <a href="https://yandex.ru/maps/-/CDc8zQ67" target="_blank">188354, Ленинградская обл.,Гатчинский р-н, <br> дер. Малое Верево, Киевское ш., д. 18б</a>
                 </div>
                 <div class="contacts__misc">
-                    Для посещения предприятия напишите на <a href="mailto:guest@potoki.ru">guest@potoki.ru</a>
+                    Для посещения предприятия напишите на <a rel="nofollow" href="mailto:guest@potoki.ru">guest@potoki.ru</a>
                 </div>
             </div>
             <div class="contacts__list-requsites">
@@ -40,7 +40,7 @@ get_header(); ?>
                         <div class="contacts__person-position">
                             Менеджер по продажам B2B
                         </div>  
-                        <a href="mailto:sales1@potoki.ru" class="contacts__person-contact-link">
+                        <a href="mailto:sales1@potoki.ru" rel="nofollow" class="contacts__person-contact-link">
                             sales1@potoki.ru
                         </a>
                         <div class="contacts__person-contact-more">
@@ -54,7 +54,7 @@ get_header(); ?>
                         <div class="contacts__person-position">
                             Менеджер по закупкам
                         </div>  
-                        <a href="mailto:purchase@potoki.ru" class="contacts__person-contact-link">
+                        <a href="mailto:purchase@potoki.ru" rel="nofollow" class="contacts__person-contact-link">
                             Связаться
                         </a>
                 </div>
@@ -65,7 +65,7 @@ get_header(); ?>
                         <div class="contacts__person-position">
                             Операционный директор
                         </div>  
-                        <a href="mailto:head.o@potoki.ru" class="contacts__person-contact-link">
+                        <a href="mailto:head.o@potoki.ru" rel="nofollow" class="contacts__person-contact-link">
                             Связаться
                         </a>
                 </div>
@@ -76,7 +76,7 @@ get_header(); ?>
                         <div class="contacts__person-position">
                             Управляющий акционер
                         </div>  
-                        <a href="mailto:head.o@potoki.ru" class="contacts__person-contact-link">
+                        <a href="mailto:head.o@potoki.ru" rel="nofollow"class="contacts__person-contact-link">
                             Связаться
                         </a>
                 </div>

@@ -49,10 +49,11 @@
          </div>
    </div>
 </footer>
-
+<?/*
 <div class="preloader">
       <div id="container"></div>
 </div>
+*/?>
 
 
 
