@@ -86,7 +86,14 @@
 
         &_1,&_2,&_3,&_4{
             position: relative;
-            
+            h3{
+                transition: all 0.2s;
+            }
+            &.active{
+                h3{
+                    color: var(--color-two);
+                }
+            }
         }
         &_1,&_2,&_4{
             &:before{

@@ -24,7 +24,7 @@ get_header(); ?>
             </div>
             <div class="home-block-one__content_2">
                 <div class="home-block-one__double" data-aos="fade-up" data-aos-delay="300">
-                    <div><img src='<?=get_template_directory_uri()?>/assets/images/pic1_v2.webp?v=<?=$THEME_VERSION?>'  alt="" width="auto" height="auto"/></div>
+                    <div><img src='<?=get_template_directory_uri()?>/assets/images/pic1.webp?v=<?=$THEME_VERSION?>'  alt="" width="auto" height="auto"/></div>
                     <div>
                         <p>
                         Новое предприятие в Гатчинском <br>
@@ -235,7 +235,11 @@ get_header(); ?>
         </div>
         <div class="home-products__content">
             <div class="home-products__content_1" data-aos="fade-up" data-aos-delay="200">
-                <div><img src='<?=get_template_directory_uri()?>/assets/images/potoki_products.webp?v=<?=$THEME_VERSION?>' alt="" width="auto" height="auto"/></div>
+                <div>
+                    
+                        <img src='<?=get_template_directory_uri()?>/assets/images/potoki_products.webp?v=<?=$THEME_VERSION?>' alt="" width="auto" height="auto"/>
+
+                </div>
             </div>
             <div class="home-products__content_2" data-aos="fade-up" data-aos-delay="200">
                 <h3>
@@ -246,12 +250,16 @@ get_header(); ?>
                     </svg>
                 </h3>
                 <div class="home-products__img-wrapper">
-                    <img src='<?=get_template_directory_uri()?>/assets/images/pic7.webp?v=<?=$THEME_VERSION?>'  alt="" width="auto" height="auto"/>
+                    <a href="/products/">
+                        <img src='<?=get_template_directory_uri()?>/assets/images/pic7.webp?v=<?=$THEME_VERSION?>'  alt="" width="auto" height="auto"/>
+                    </a>
                 </div>
             </div>
             <div class="home-products__content_3" data-aos="fade-down" data-aos-delay="300">
                 <div class="home-products__img-wrapper">
-                    <img src='<?=get_template_directory_uri()?>/assets/images/pic8.webp?v=<?=$THEME_VERSION?>'  alt="" width="auto" height="auto"/>
+                    <a href="/products/#block_pack">
+                        <img src='<?=get_template_directory_uri()?>/assets/images/pic8.webp?v=<?=$THEME_VERSION?>'  alt="" width="auto" height="auto"/>
+                    </a>
                 </div>
                 <h3>
                     Упаковка
@@ -271,7 +279,9 @@ get_header(); ?>
                     </svg>
                 </h3>
                 <div class="home-products__img-wrapper">
-                    <img src='<?=get_template_directory_uri()?>/assets/images/pic9.webp?v=<?=$THEME_VERSION?>'  alt="" width="auto" height="auto"/>
+                    <a href="/products/#stm">
+                        <img src='<?=get_template_directory_uri()?>/assets/images/pic9.webp?v=<?=$THEME_VERSION?>'  alt="" width="auto" height="auto"/>
+                    </a>
                 </div>
             </div>
         </div>

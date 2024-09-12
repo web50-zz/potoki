@@ -132,7 +132,7 @@ $THEME_VERSION =  wp_get_theme()->get( 'Version' );
             </div>
     </div>
 </section>
-<section class="products-block-three">
+<section class="products-block-three" id="stm">
     <div class="container">
         <div class="products-block-three__grid">
             <div class="products-block-three__title" data-aos="fade-in" data-aos-delay="200">
@@ -169,7 +169,7 @@ $THEME_VERSION =  wp_get_theme()->get( 'Version' );
     </div>
 </section>
 <section class="products-block-four">
-    <div class="container">
+    <div class="container" id="block_pack">
             <div class="products-block-four__title" data-aos="fade-in" data-aos-delay="200">
                 упаковка
             </div>
