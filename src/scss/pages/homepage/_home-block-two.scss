@@ -9,6 +9,10 @@
         margin-bottom: 0px;
         margin-top: 10px;
         font-weight: 300;
+        @media(max-width: 1520px){
+            font-size: 20px;
+        }
+        
         @media(max-width: 992px){
             font-size: 20px;
             font-weight: 400;
@@ -155,8 +159,14 @@
             top: 200px;
             left: 3px;
             background-color: var(--line-color);
-            height: 1000px;
+            height: 750px;
             opacity: 0.2;
+            @media(max-width: 1520px){
+                height: 600px;
+            }
+            @media(max-width: 1277px){
+                height: 500px;
+            }
             @media(max-width: 992px){
                 top: 10px;
                 left: 0px;
