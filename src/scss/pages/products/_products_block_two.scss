@@ -176,7 +176,13 @@
                 &:before{
                     top: 18px;
                     left: 0px;
-                    height: 900px;
+                    height: 700px;
+                    @media(max-width: 1700px){
+                        height: 600px;
+                    }
+                    @media(max-width: 1600px){
+                        height: 400px;
+                    }
                     @media(max-width: 768px){
                         display: none;
                     }

@@ -77,7 +77,9 @@ $THEME_VERSION =  wp_get_theme()->get( 'Version' );
 							*/?>
 							<div class="top-screen__second dark"  data-aos="fade-left" data-aos-delay="2800">
 								<div class="top-screen__still_logo">
+									<a href="https://stillpack.ru/" target="_blank">
 										<img class="top-screen__still_logo_pic" alt="" width="324" height="144" src='<?=get_template_directory_uri()?>/assets/images/products/products_pic2.webp?v=<?=$THEME_VERSION?>'/>
+									</a>
 								</div>
 							</div>
 						<?}?>
