@@ -76,7 +76,7 @@ get_header(); ?>
                         <div class="contacts__person-position">
                             Управляющий акционер
                         </div>  
-                        <a href="mailto:head.o@potoki.ru" rel="nofollow"class="contacts__person-contact-link">
+                        <a href="mailto:head@potoki.ru" rel="nofollow"class="contacts__person-contact-link">
                             Связаться
                         </a>
                 </div>
