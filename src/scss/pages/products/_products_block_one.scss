@@ -120,9 +120,11 @@
                     }
                 }
             }
-            br{
-                @media(max-width: 450px){
-                    display: none;
+            p{
+                br{
+                    @media(max-width: 450px){
+                        display: none;
+                    }
                 }
             }
         }
