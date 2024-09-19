@@ -233,9 +233,53 @@ function remove_comments(){
 }
 add_action( 'admin_menu', 'remove_comments' );
 
+function wpcf7_before_send_mail_function( $contact_form, $abort, $submission ) {
+    $posted_data = $submission->get_posted_data();
+    if ($posted_data['your-subject'][0] == '1') {
+        $recipient_email = '9@u9.ru';
+    } 
+    else if ($posted_data['your-subject'][0] == '2') { 
+        $recipient_email = 'all.universe9@gmail.com';
+    }
+    else if ($posted_data['your-subject'][0] == '3') { 
+        $recipient_email = 'horius@mail.ru';
+    }
+    else if ($posted_data['your-subject'][0] == '4') { 
+        $recipient_email = '9@u9.ru';
+    }
+    else if ($posted_data['your-subject'][0] == '5') { 
+        $recipient_email = 'all.universe9@gmail.com';
+    }
+    else if ($posted_data['your-subject'][0] == '6') { 
+        $recipient_email = 'horius@mail.ru';
+    }else{
+        $recipient_email = '9@u9.ru';
+    }
+    //write_log($posted_data['your-subject'][0]);
+    //write_log($recipient_email);
+    $properties  = $contact_form->get_properties();
+    $properties['mail']['recipient'] = $recipient_email;
+    $contact_form->set_properties( $properties );
+    // Do not return anything, since this is an action and not a filter.
+}
+add_filter( 'wpcf7_before_send_mail', 'wpcf7_before_send_mail_function', 10, 3 );
+
+
 // Добавить ввозможность заполнять excerpt к странице в админке. По дефолту нет этого.
 //add_post_type_support( 'page', 'excerpt' );
 // Добавить поддержку тамбнейлов в посты и страницы.
 
 //add_theme_support( 'post-thumbnails' );
 //set_post_thumbnail_size( 1568, 9999 );
+
+
+function write_log( $data ) {
+    
+    if ( true === WP_DEBUG ) {
+        if ( is_array( $data ) || is_object( $data ) ) {
+            error_log( print_r( $data, true ) );
+        } else {
+            error_log( $data );
+        }
+    }
+}
