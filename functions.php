@@ -236,22 +236,22 @@ add_action( 'admin_menu', 'remove_comments' );
 function wpcf7_before_send_mail_function( $contact_form, $abort, $submission ) {
     $posted_data = $submission->get_posted_data();
     if ($posted_data['your-subject'][0] == '1') {
-        $recipient_email = '9@u9.ru';
+        $recipient_email = 'qual@potoki.ru';
     } 
     else if ($posted_data['your-subject'][0] == '2') { 
-        $recipient_email = 'all.universe9@gmail.com';
+        $recipient_email = 'sales@potoki.ru';
     }
     else if ($posted_data['your-subject'][0] == '3') { 
-        $recipient_email = 'horius@mail.ru';
+        $recipient_email = 'guest@potoki.ru';
     }
     else if ($posted_data['your-subject'][0] == '4') { 
-        $recipient_email = '9@u9.ru';
+        $recipient_email = 'hr@potoki.ru';
     }
     else if ($posted_data['your-subject'][0] == '5') { 
-        $recipient_email = 'all.universe9@gmail.com';
+        $recipient_email = 'head@potoki.ru';
     }
     else if ($posted_data['your-subject'][0] == '6') { 
-        $recipient_email = 'horius@mail.ru';
+        $recipient_email = 'brand@potoki.ru';
     }else{
         $recipient_email = '9@u9.ru';
     }
