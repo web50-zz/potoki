@@ -16,7 +16,7 @@ get_header(); ?>
                 </div>
                 <div class="contacts__address">
                     <svg><use href="#blue_arrow"></use></svg>
-                    <a href="https://yandex.ru/maps/-/CDc8zQ67" target="_blank">188354, Ленинградская обл.,Гатчинский р-н, <br> дер. Малое Верево, Киевское ш., д. 18б</a>
+                    <a href="https://yandex.ru/maps/-/CDHJIIm~" target="_blank">188354, Ленинградская обл.,Гатчинский р-н, <br> дер. Малое Верево, Киевское ш., д. 18б</a>
                 </div>
                 <div class="contacts__misc">
                     Для посещения предприятия напишите на <a rel="nofollow" href="mailto:guest@potoki.ru">guest@potoki.ru</a>
