@@ -14,7 +14,7 @@ get_header(); ?>
                 <p>
                 <strong>ПЕРВЫЙ В РОССИИ</strong> <br>
                 производитель воды <br>
-                в мягкой упаковке
+                в дойпаке
                 </p>
                 <?/*
                 <h3>
@@ -29,7 +29,7 @@ get_header(); ?>
                         <p>
                         Новое предприятие в Гатчинском <br>
                         районе Ленинградской области.<br><br>
-                        Запуск – сентябрь 2024
+                        Запуск – сентябрь 2024 года
                         </p>
                     </div>
                 </div>
@@ -40,9 +40,9 @@ get_header(); ?>
                 </svg>
                 <p>
                     <strong>
-                ДОЙПАКИ<br>
-                ПИТЬЕВАЯ ВОДА <br>
-                КОНТРАКТНОЕ ПР-ВО<br>
+                <a href="/products/#block_pack">ДОЙПАКИ</a><br>
+                <a href="/products/#pv">ПИТЬЕВАЯ ВОДА</a> <br>
+                <a href="/products/#stm">КОНТРАКТНОЕ ПРОИЗВОДСТВО</a><br>
                 </strong>
                 <?/*
                 <p>
@@ -59,20 +59,20 @@ get_header(); ?>
 </section>
 <section class="marquee ticker-wrapper">
     <div class="ticker-wrapper__first-half">
-        <span>Потоки</span> — продукты рационального потребления
+        <span>Потоки&nbsp;</span> — продукты рационального потребления
     </div>
     <div class="ticker-wrapper__second-half">
-        <span>Потоки</span> — продукты рационального потребления
+        <span>Потоки&nbsp;</span> — продукты рационального потребления
     </div>
 </section>
-<section class="home-block-two">
+<section id="home-block-two" class="home-block-two">
     <div class="home-block-two__pic">
 		<img src='<?=get_template_directory_uri()?>/assets/images/pic2.webp?v=<?=$THEME_VERSION?>'  alt="" width="auto" height="auto"/>
 	</div>
 	<div class="home-block-two__content">
             <div class="container">
-                <div class="home-block-two__one" data-aos="fade-down" data-aos-delay="400">
-                    <div class="home-block-two__potoki" data-aos="fade-up" data-aos-delay="100">
+                <div class="home-block-two__one" >
+                    <div id="home-block-two__potoki-image" class="home-block-two__potoki">
                         <svg>
                             <use href="#potoki_vertical_top_2"></use>
                         </svg>
@@ -82,18 +82,20 @@ get_header(); ?>
                     <p>
                     Мы не считаем человека <br>
                     ответственным за излишнее <br>
-                    использование пластиков.<br>
-                    МЫ — РЕАЛИСТЫ <br>
-                    и нашли решение проблемы.
+                    использование пластика, <br>
+                    но и не готовы с этим мириться.<br>
+                    Мы – реалисты <br>
+                    и нашли решение
+                    
                     </p>
                 </div>
                 <div class="home-block-two__three" data-aos="fade-up" data-aos-delay="600">
                     <p>
-                    Используя дойпак <br>
+                    Используя дойпак <br>
                     вместо ПЭТ-бутылки, <br>
-                    ТЫ ПОМОГАЕШЬ ОБЩЕСТВУ <br>
+                    ТЫ МОЖЕШЬ <br>
                     сократить потребление пластика <br>
-                    в 2 раза, а объем отходов в 7 раз.
+                    в 2 раза, а объем отдохов в 7 раз
                     </p>
                 </div>
             </div>
@@ -102,7 +104,7 @@ get_header(); ?>
 <section class="faq">
     <div class="container">
         <div class="faq__header">
-            Вопрос-ответ
+        Дойпак vs. ПЭТ-бутылка
         </div>
         <div class="faq-list">
             <div class="faq-message faq-to" data-aos="fade-in" data-aos-delay="100">
@@ -115,31 +117,31 @@ get_header(); ?>
                 Да, ПЭТ-бутылка целиком состоит из одного материала
             </div>
             <div class="faq-message" data-aos="fade-in" data-aos-delay="700">
-                Дойпак сделан из трехслойной пленки и просто «переплавить» его не получится
+                А дойпак сделан из трехслойной пленки и просто «переплавить» его не получится
             </div>
             <div class="faq-message faq-to" data-aos="fade-in" data-aos-delay="800">
-                А пластиковая бутылка экологичнее?
+                То есть пластиковая бутылка экологичнее?
             </div>
             <div class="faq-message" data-aos="fade-in" data-aos-delay="1000">
-                ПЭТ-бутылка перерабатывается
+                ПЭТ-бутылку можно переработать
             </div>
             <div class="faq-message" data-aos="fade-in" data-aos-delay="1300">
-                Но, без раздельного сбора мусора, его сортировки и переработки – это бесполезно
+                Но, без раздельного сбора мусора и его сортировки – это бесполезно
             </div>
             <div class="faq-message faq-to" data-aos="fade-in" data-aos-delay="1700">
                 Хм. Тогда в чем плюсы дойпака?
             </div>
             <div class="faq-message" data-aos="fade-in" data-aos-delay="2000">
-                Дойпак, в среднем, содержит в 2 раза меньше пластика
+                Дойпак в среднем содержит в 2 раза меньше пластика
             </div>
             <div class="faq-message" data-aos="fade-in" data-aos-delay="2300">
-                А ещё полностью сжимается по мере потребления продукта
+                И полностью сжимается по мере потребления продукта
             </div>
             <div class="faq-message" data-aos="fade-in" data-aos-delay="2600">
-                Что позволяет сократить объем отходов примерно в 7 раз!
+            Что позволяет сократить объем отходов примерно в 7 раз!
             </div>
             <div class="faq-message" data-aos="fade-in" data-aos-delay="2900">
-                А ещё, он просто приятный на ощупь )
+                А ещё, он просто приятный на ощупь ;-)
             </div>
         </div>
     </div>
@@ -243,22 +245,21 @@ get_header(); ?>
             </div>
             <div class="home-products__content_2" data-aos="fade-up" data-aos-delay="200">
                 <h3>
-                    Питьевая вода <br>
-                    СТИЛЛ 
+                    Питьевая вода<br> СТИЛЛ
                     <svg>
                         <use href="#blue_arrow"></use>
                     </svg>
                 </h3>
                 <div class="home-products__img-wrapper">
                     <a href="/products/">
-                        <img src='<?=get_template_directory_uri()?>/assets/images/pic7.webp?v=<?=$THEME_VERSION?>'  alt="" width="auto" height="auto"/>
+                        <img src='<?=get_template_directory_uri()?>/assets/images/pic7.jpg?v=<?=$THEME_VERSION?>'  alt="" width="auto" height="auto"/>
                     </a>
                 </div>
             </div>
             <div class="home-products__content_3" data-aos="fade-down" data-aos-delay="300">
                 <div class="home-products__img-wrapper">
                     <a href="/products/#block_pack">
-                        <img src='<?=get_template_directory_uri()?>/assets/images/pic8.webp?v=<?=$THEME_VERSION?>'  alt="" width="auto" height="auto"/>
+                        <img src='<?=get_template_directory_uri()?>/assets/images/pic8.jpg?v=<?=$THEME_VERSION?>'  alt="" width="auto" height="auto"/>
                     </a>
                 </div>
                 <h3>
@@ -280,7 +281,7 @@ get_header(); ?>
                 </h3>
                 <div class="home-products__img-wrapper">
                     <a href="/products/#stm">
-                        <img src='<?=get_template_directory_uri()?>/assets/images/pic9.webp?v=<?=$THEME_VERSION?>'  alt="" width="auto" height="auto"/>
+                        <img src='<?=get_template_directory_uri()?>/assets/images/pic9.jpg?v=<?=$THEME_VERSION?>'  alt="" width="auto" height="auto"/>
                     </a>
                 </div>
             </div>

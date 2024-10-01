@@ -40,8 +40,8 @@ get_header(); ?>
                         <div class="contacts__person-position">
                             Менеджер по продажам B2B
                         </div>  
-                        <a href="mailto:sales1@potoki.ru" rel="nofollow" class="contacts__person-contact-link">
-                            sales1@potoki.ru
+                        <a href="mailto:sales@potoki.ru" rel="nofollow" class="contacts__person-contact-link">
+                            sales@potoki.ru
                         </a>
                         <div class="contacts__person-contact-more">
                             +7 (812) 400-20-20 доб. 131

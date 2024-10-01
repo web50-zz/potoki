@@ -66,7 +66,7 @@ $THEME_VERSION =  wp_get_theme()->get( 'Version' );
 								<use href="#blue_arrow"></use>
 							</svg>
 							Cохраняя и развивая <br>
-							качество жизни людей 
+							качество жизни
 						</div>
 						<?}else if($pageID == '19' || $pageID == '26'){?>
 							<?/*
