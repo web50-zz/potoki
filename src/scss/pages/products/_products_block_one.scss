@@ -206,7 +206,7 @@
         }
     }
     &__pic-one{
-        max-width: 334px;
+        max-width: 481px;
         margin-left: -50px;
         margin-top: -20px;
         @media(max-width: 1486px){
@@ -219,6 +219,8 @@
             margin: 0px auto;
         }
         img{
+            width: 100%;
+            height: auto;
             @media(max-width: 1486px){
                 width: 100%;
                 height: auto;
