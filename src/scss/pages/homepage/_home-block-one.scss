@@ -137,6 +137,14 @@
         }
         a{
             text-decoration: none;
+            transition: all 0.3s;
+            display: block;
+            &:hover{
+                color: var(--color-two);
+            }
+            &.compact{
+                line-height: 100%;
+            }
         }
         h3{
             font-size: 40px;
