@@ -72,7 +72,7 @@ $duration: 40s;
     overflow: hidden;
     min-height: 52px;
     background-color: #F9852C;
-    z-index: 2;
+    z-index: 4;
     @media(max-width: 992px){
 //      min-height: 52px;
     }
@@ -116,7 +116,7 @@ $duration: 40s;
       position: fixed;
       top: 0px;
       right: 0px;
-      z-index: 2;
+      z-index: 4;
       padding: 10px;
       background: #F9852C;
       cursor: pointer;
