@@ -47,7 +47,18 @@ $THEME_VERSION =  wp_get_theme()->get( 'Version' );
 </head>
 
 <body class="body">
-	<header>
+	<a href="/products/" class="marquee2 ticker-wrapper">
+		<div class="ticker-wrapper__first-half">продукт бренда - вода “CТИЛЛ” &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;продукт бренда - вода “CТИЛЛ” &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;продукт бренда - вода “CТИЛЛ” &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;продукт бренда - вода “CТИЛЛ” &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;продукт бренда - вода “CТИЛЛ” &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+		<div class="ticker-wrapper__second-half">продукт бренда - вода “CТИЛЛ” &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;продукт бренда - вода “CТИЛЛ” &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;продукт бренда - вода “CТИЛЛ” &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;продукт бренда - вода “CТИЛЛ” &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;продукт бренда - вода “CТИЛЛ” &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+	</a>
+	<div class="marquee2__close">
+		<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<circle cx="17" cy="17" r="15.5" fill="#F9852C" stroke="white" stroke-width="3"/>
+			<path d="M14.4766 9.78125L16.6641 14.6934L18.7637 9.78125H21.6836L18.1875 16.8223L21.752 24H18.7344L16.5469 18.9902L14.3691 24H11.4102L15.0137 16.7734L11.4883 9.78125H14.4766Z" fill="white"/>
+		</svg>
+	</div>
+
+	<header <?=(is_front_page())?'class="with_marquee"':'';?>>
 		<section class="top-screen <?= !is_front_page()?'page':'home';?> <?=($pageID == '19'||$pageID == '26')?'products-page':'';?> <?=($pageID == '8')?'contacts-page':'';?>">
 			<div class="top-screen__pic">
 				<?if(is_front_page()){?>

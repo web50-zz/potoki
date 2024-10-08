@@ -3,3 +3,4 @@ export * from './contact-form';
 export * from './preloader';
 export * from './header';
 export * from './modal';
+export * from './top_marquee';

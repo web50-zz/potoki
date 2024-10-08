@@ -1,0 +1,8 @@
+header{
+    &.with_marquee{// если сверху бешущая строка то смещает на 52px ниже
+        margin-top: 52px;
+        .buter{
+            top: calc(50px + 52px);
+        }
+    }
+}
