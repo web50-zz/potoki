@@ -49,8 +49,8 @@ $THEME_VERSION =  wp_get_theme()->get( 'Version' );
 <body class="body">
 	<?if(is_front_page()){?>
 	<a href="/products/" class="marquee2 ticker-wrapper">
-		<div class="ticker-wrapper__first-half">продукт бренда - вода “CТИЛЛ” &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;продукт бренда - вода “CТИЛЛ” &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;продукт бренда - вода “CТИЛЛ” &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;продукт бренда - вода “CТИЛЛ” &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;продукт бренда - вода “CТИЛЛ” &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
-		<div class="ticker-wrapper__second-half">продукт бренда - вода “CТИЛЛ” &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;продукт бренда - вода “CТИЛЛ” &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;продукт бренда - вода “CТИЛЛ” &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;продукт бренда - вода “CТИЛЛ” &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;продукт бренда - вода “CТИЛЛ” &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+		<div class="ticker-wrapper__first-half">Питьевая вода «Потоки Стилл» &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Питьевая вода «Потоки Стилл» &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Питьевая вода «Потоки Стилл» &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Питьевая вода «Потоки Стилл» &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Питьевая вода «Потоки Стилл» &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+		<div class="ticker-wrapper__second-half">Питьевая вода «Потоки Стилл» &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Питьевая вода «Потоки Стилл» &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Питьевая вода «Потоки Стилл» &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Питьевая вода «Потоки Стилл» &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Питьевая вода «Потоки Стилл» &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
 	</a>
 	<div class="marquee2__close">
 		<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
