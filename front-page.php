@@ -24,7 +24,7 @@ get_header(); ?>
             </div>
             <div class="home-block-one__content_2">
                 <div class="home-block-one__double" data-aos="fade-up" data-aos-delay="300">
-                    <div><img src='<?=get_template_directory_uri()?>/assets/images/pic1.webp?v=<?=$THEME_VERSION?>'  alt="" width="auto" height="auto"/></div>
+                    <div><img src='<?=get_template_directory_uri()?>/assets/images/pic_1.jpg?v=<?=$THEME_VERSION?>'  alt="" width="auto" height="auto"/></div>
                     <div>
                         <p>
                         Новое предприятие в Гатчинском <br>

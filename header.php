@@ -66,9 +66,9 @@ $THEME_VERSION =  wp_get_theme()->get( 'Version' );
 					<img class="top-screen__pic_1" alt="" width="auto" height="auto" src='<?=get_template_directory_uri()?>/assets/images/top_pic_1_v4.webp?v=<?=$THEME_VERSION?>'/>
 					<img class="top-screen__pic_2"  alt="" width="auto" height="auto" src='<?=get_template_directory_uri()?>/assets/images/top_pic_2_v2.webp?v=<?=$THEME_VERSION?>'/>
 				<?}else if($pageID == '19' || $pageID == '26'){?>
-					<img class="top-screen__pic_1" alt="" width="auto" height="auto" src='<?=get_template_directory_uri()?>/assets/images/top_pic_4.webp?v=<?=$THEME_VERSION?>'/>
+					<img class="top-screen__pic_1" alt="" width="auto" height="auto" src='<?=get_template_directory_uri()?>/assets/images/top_pic_4_v2.webp?v=<?=$THEME_VERSION?>'/>
 					<img class="top-screen__pic_2" alt="" width="auto" height="auto" src='<?=get_template_directory_uri()?>/assets/images/products/top_pic_products_mobile.webp?v=<?=$THEME_VERSION?>'/>
-					<img class="top-screen__pic_3" alt="" width="auto" height="auto" src='<?=get_template_directory_uri()?>/assets/images/products/top_pic_products_mobile2.webp?v=<?=$THEME_VERSION?>'/>
+					<img class="top-screen__pic_3" alt="" width="auto" height="auto" src='<?=get_template_directory_uri()?>/assets/images/products/top_pic_products_mobile2_v2.webp?v=<?=$THEME_VERSION?>'/>
 				<?}else{?>
 					<img class="top-screen__pic_1" alt="" width="auto" height="auto" src='<?=get_template_directory_uri()?>/assets/images/top_pic_3.webp?v=<?=$THEME_VERSION?>'/>
 					<img class="top-screen__pic_2"  alt="" width="auto" height="auto" src='<?=get_template_directory_uri()?>/assets/images/top_pic_5.webp?v=<?=$THEME_VERSION?>'/>
