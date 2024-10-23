@@ -23,7 +23,7 @@ $THEME_VERSION =  wp_get_theme()->get( 'Version' );
                 </div>
                 <div class="products-block-one__grid-two" data-aos="fade-up" data-aos-delay="100">
                     <div class="products-block-one__pic-one">
-                            <img src="<?=get_template_directory_uri()?>/assets/images/products/products_pic_1.png?v=<?=$THEME_VERSION?>" alt="" />
+                            <img src="<?=get_template_directory_uri()?>/assets/images/products/products_pic_1v2.png?v=<?=$THEME_VERSION?>" alt="" />
                     </div>
                 </div>
                 <div class="products-block-one__grid-three" data-aos="fade-up" data-aos-delay="600">
